@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+.container{
+  @apply max-w-[1320px] mx-auto
+}
+
+@theme {
+  --font-inter:"Inter", sans-serif; 
+   --shadow-service: 0px 0px 10px 2px rgba(0, 0, 0, 25%);
+}
+@layer{
+  .menu ul li a{
+    color:#ffff;
+     font-family: "Inter", sans-serif;
+     font-size: 18px;
+     line-height: 26px;
+     font-weight: 400;
+    transition: all linear .2s;
+  }
+  .menu ul li a:hover{
+    font-weight: 700;
+    color: #4756DF;
+  }
+.slick-dots li button {
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 50% !important;
+    background: blue !important;
+}
+.slick-dots li button:before {
+    color: transparent !important;
+}
+.slick-dots li.slick-active button {
+    background-color: #fff !important;
+}
+.slick-dots li.slick-active button::before {
+    background-color:#4756DF !important;
+    width: 16px!important;
+    height: 16px!important;
+    border-radius: 50%!important;
+    top: 58%!important;
+    left: 60%!important;
+    transform: translate(-50%,-50%)!important;
+}
+.slick-dots {
+    bottom: -125px !important;
+}
+.slick-center{
+  background-color: #F4EFEF;
+  border-radius: 30px;
+}
+}
+
